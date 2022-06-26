@@ -44,4 +44,8 @@
       ![Imagem](https://i.imgur.com/wYNtsDE.png)
       - Matriz de confusão classes 100% e 0% de acerto:
       ![Imagem](https://i.imgur.com/AEukZgS.png)
-      -  
+      - Analisando dados, e quantidade de instâncias das classes que tiveram 0% de acerto. Percebe-se que existem falta de dados nestas instâncias, assim como poucas instâncias conforme mostrado na tabela abaixo.
+      ![Imagem](https://i.imgur.com/NlNnLvb.png)
+
+### Arquivo para download (orange)
+ - [analisys-soybean.ows](analisys-soybean.ows)
