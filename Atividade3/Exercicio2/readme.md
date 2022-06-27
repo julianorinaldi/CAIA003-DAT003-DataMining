@@ -30,7 +30,16 @@
           - Atributo `wife-age`: Equal-frequency discretization -> Namber of intervals: 4
           - Atributo `number-children-born`: Equal-frequency discretization -> Namber of intervals: 4
           
-          ![Imagem](https://i.imgur.com/Jfwn2fR.png)
+        - Widget Edit Domain
+          - Atributo `wife-age`: {jovem, adulta, madura, meia-idade}
+          - Atributo `number-children-born`: {1, 2, 3_4, 5+}
+          
+          ![Imagem](https://i.imgur.com/5xy2CtX.png)
+          ![Imagem](https://i.imgur.com/034NEYl.png)
+
+        - Widget Data Table (visualizar dados)
+        
+        ![Imagem](https://i.imgur.com/Jfwn2fR.png)
     
     d. Utilize os algoritmos baseline (ZeroRule e OneRule) para estabelecer um referencial de comparação acerca da qualidade da classificação. Anote as métricas de qualidade (acurácia, precision, recall e F1 score).
 
