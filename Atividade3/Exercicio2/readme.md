@@ -23,9 +23,11 @@
     c. Utilizando a ferramenta de discretização, faça um pré-processamento dos atributos numéricos wifes_age e number_chd_born, discretizando os dados em faixas com igual frequência, respectivamente em: {jovem, adulta, madura, meia-idade} e {1, 2, 3_4, 5+}.
       - Procedimentos:
         - Widget Discretize
+
         ![Imagem](https://i.imgur.com/jMdXNoZ.png)
+        
           - Atributo `wife-age`: Equal-frequency discretization -> Namber of intervals: 4
-          - Atributo number-children-born: Equal-frequency discretization -> Namber of intervals: 4
+          - Atributo `number-children-born`: Equal-frequency discretization -> Namber of intervals: 4
           ![Imagem](https://i.imgur.com/Jfwn2fR.png)
     
     d. Utilize os algoritmos baseline (ZeroRule e OneRule) para estabelecer um referencial de comparação acerca da qualidade da classificação. Anote as métricas de qualidade (acurácia, precision, recall e F1 score).
