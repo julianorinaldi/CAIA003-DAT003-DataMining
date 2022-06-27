@@ -14,6 +14,7 @@
           - Widget Data Table para ver o dados
           - Widget Select Columns para definir a classe target
           - Widget para análise de dados (vários)
+
           ![Imagem](https://i.imgur.com/YZWBrVw.png)
 
     b. Utilizando as ferramentas de visualização de dados, o que é possível preliminarmente inferir preliminarmente sobre os atributos deste dataset?
@@ -25,9 +26,10 @@
         - Widget Discretize
 
         ![Imagem](https://i.imgur.com/jMdXNoZ.png)
-        
+
           - Atributo `wife-age`: Equal-frequency discretization -> Namber of intervals: 4
           - Atributo `number-children-born`: Equal-frequency discretization -> Namber of intervals: 4
+          
           ![Imagem](https://i.imgur.com/Jfwn2fR.png)
     
     d. Utilize os algoritmos baseline (ZeroRule e OneRule) para estabelecer um referencial de comparação acerca da qualidade da classificação. Anote as métricas de qualidade (acurácia, precision, recall e F1 score).
