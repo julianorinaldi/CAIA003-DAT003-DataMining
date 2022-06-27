@@ -14,7 +14,7 @@
           - Widget Data Table para ver o dados
           - Widget Select Columns para definir a classe target
           - Widget para análise de dados (vários)
-          [Imagem](https://i.imgur.com/YZWBrVw.png)
+          ![Imagem](https://i.imgur.com/YZWBrVw.png)
 
     b. Utilizando as ferramentas de visualização de dados, o que é possível preliminarmente inferir preliminarmente sobre os atributos deste dataset?
       - Análise:
