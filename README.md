@@ -12,3 +12,4 @@ Data: Junho/2022 a Agosto/2022
 ### Atividade3
  - [Exercícios proposto](Atividade3/Exercicio1/exercício3-árvores-e-regras-de-classificação.pdf)
     - [Exercicio1](Atividade3/Exercicio1/readme.md)
+    - [Exercicio2](Atividade3/Exercicio2/readme.md)

@@ -7,8 +7,8 @@
       - Procedimento realizados:
         - Análise do dataset observando dados.
         - Análise da documentação sobre o dataset.
-        - Adição da coluna cabeçário no arquivo [cmc[preparado].data](Atividade3/Exercicio2/Dataset/cmc[preparado].data) para prepará-lo ao uso.
-        - Criação do projeto no Orange [contraceptive-method-choice.ows](Atividade3/Exercicio2/contraceptive-method-choice.ows)
+        - Adição da coluna cabeçário no arquivo [cmc[preparado].data](Dataset/cmc[preparado].data) para prepará-lo ao uso.
+        - Criação do projeto no Orange [contraceptive-method-choice.ows](contraceptive-method-choice.ows)
           - Widget CSV File Import para aquivo `cmc[preparado].data`
           - Widget Edit Domain para definir tipo de dados
           - Widget Data Table para ver o dados
