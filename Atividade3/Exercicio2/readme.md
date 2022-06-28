@@ -47,7 +47,7 @@
            - Simplesmente prediz a classe da maioria.
            - Se o número de instâncias por classe for balanceado, qualquer classe pode ser usada
            - Acurácia ZeroRule
-             - Quantidade de classes: 3 - {1=No-use, 2=Long-term, 3=Short-term}
+             - Quantidade de classes: 3 - `{1=No-use, 2=Long-term, 3=Short-term}`
              - Quantidade de instâncias: 1473
              - Agrupamento:
                - No-use	629
@@ -64,6 +64,7 @@
                - feature `number-children-born` teve melhor acurácia.
                
              ![Imagem](https://i.imgur.com/qcjDuIP.png)
+
              ![Imagem](https://i.imgur.com/awsEXcC.png)
 
              - Resultados:
