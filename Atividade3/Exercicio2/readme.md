@@ -4,6 +4,7 @@
 
 4. Procedimentos:
     a. Utilize o [Contraceptive Method Choice Dataset](https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice), disponível no Machine Learning Repository. O objetivo aqui é predizer o método contraceptivo utilizado por mulheres da Indonésia, com base em indicadores demográficos e sócio-econômicos. O dataset tem 1473 instâncias e 9 atributos previsores, e 3 classes desbalanceadas (No-use, Long-term e Short-term).
+
       - Procedimento realizados:
         - Análise do dataset observando dados.
         - Análise da documentação sobre o dataset.
@@ -22,6 +23,7 @@
         - Os dados estão bem distribuídos e próximos, é difícil inferir algo apenas olhando aos dados.
 
     c. Utilizando a ferramenta de discretização, faça um pré-processamento dos atributos numéricos wifes_age e number_chd_born, discretizando os dados em faixas com igual frequência, respectivamente em: {jovem, adulta, madura, meia-idade} e {1, 2, 3_4, 5+}.
+
       - Procedimentos:
         - Widget Discretize
 
@@ -42,12 +44,13 @@
         ![Imagem](https://i.imgur.com/Jfwn2fR.png)
     
     d. Utilize os algoritmos baseline (ZeroRule e OneRule) para estabelecer um referencial de comparação acerca da qualidade da classificação. Anote as métricas de qualidade (acurácia, precision, recall e F1 score).
+
        - Procedimentos:
          - Algoritmo ZeroRule: nenhuma regra
            - Simplesmente prediz a classe da maioria.
            - Se o número de instâncias por classe for balanceado, qualquer classe pode ser usada
            - Acurácia ZeroRule
-             - Quantidade de classes: 3 - `{1=No-use, 2=Long-term, 3=Short-term}`
+             - Quantidade de classes: 3 `1=No-use, 2=Long-term, 3=Short-term`
              - Quantidade de instâncias: 1473
              - Agrupamento:
                - No-use	629
