@@ -45,36 +45,36 @@
     
     d. Utilize os algoritmos baseline (ZeroRule e OneRule) para estabelecer um referencial de comparação acerca da qualidade da classificação. Anote as métricas de qualidade (acurácia, precision, recall e F1 score).
 
-       - Procedimentos:
-         - Algoritmo ZeroRule: nenhuma regra
-           - Simplesmente prediz a classe da maioria.
-           - Se o número de instâncias por classe for balanceado, qualquer classe pode ser usada
-           - Acurácia ZeroRule
-             - Quantidade de classes: 3 `1=No-use, 2=Long-term, 3=Short-term`
-             - Quantidade de instâncias: 1473
-             - Agrupamento:
-               - No-use	629
-               - Long-term	333
-               - Short-term	511
-             - Acurácia: 333/1473 = 22,60% (na pior hipótese)
+      - Procedimentos:
+       - Algoritmo ZeroRule: nenhuma regra
+         - Simplesmente prediz a classe da maioria.
+         - Se o número de instâncias por classe for balanceado, qualquer classe pode ser usada
+         - Acurácia ZeroRule
+           - Quantidade de classes: 3 `1=No-use, 2=Long-term, 3=Short-term`
+           - Quantidade de instâncias: 1473
+           - Agrupamento:
+             - No-use	629
+             - Long-term	333
+             - Short-term	511
+           - Acurácia: 333/1473 = 22,60% (na pior hipótese)
 
-             ![Imagem](https://i.imgur.com/yHDZolE.png)
+           ![Imagem](https://i.imgur.com/yHDZolE.png)
 
-         - Algoritmo OneRule: regra um
-           - Aplica o classificador usando apenas o atributo de maior maior importância (que minimiza a entropia ou outra medida)
-           - Acurácia OneRule
-             - Análise com Widget Rank
-               - feature `number-children-born` teve melhor acurácia.
-               
-             ![Imagem](https://i.imgur.com/qcjDuIP.png)
+       - Algoritmo OneRule: regra um
+         - Aplica o classificador usando apenas o atributo de maior maior importância (que minimiza a entropia ou outra medida)
+         - Acurácia OneRule
+           - Análise com Widget Rank
+             - feature `number-children-born` teve melhor acurácia.
+             
+           ![Imagem](https://i.imgur.com/qcjDuIP.png)
 
-             ![Imagem](https://i.imgur.com/awsEXcC.png)
+           ![Imagem](https://i.imgur.com/awsEXcC.png)
 
-             - Resultados:
-               - Acurácia: 47,5%
-               - Precision: 36,1%
-               - Recall: 47,5%
-               - F1 score: 40,20%
+           - Resultados:
+             - Acurácia: 47,5%
+             - Precision: 36,1%
+             - Recall: 47,5%
+             - F1 score: 40,20%
 
     e. Utilize o CN2 para gerar regras de classificação que sejam compreensíveis e interessantes (mas, não óbvias). Com base nestas regras, contextualize e esclareça o perfil (sócio-econômico e cultural) das usuárias de métodos contraceptivos short_term e principalmente long_term na Indonésia.
 
