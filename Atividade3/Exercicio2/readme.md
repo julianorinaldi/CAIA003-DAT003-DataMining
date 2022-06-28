@@ -93,9 +93,12 @@
         - ZeroRule: 22,60%
         - OneRule: 47,5%
         - CN2: 47,5%
-      - OneRule e CN2 tiverem mesmo resultados.
+      - OneRule e CN2 tiverem mesmos resultados.
 
     g. Gere uma árvore de decisão com uma profundidade que permita a sua compreensão. Compare o resultado aqui obtido com as regras de classificação anteriormente obtidas e discuta os pontos positivos e negativos das duas abordagens (árvores X regras) em termos de qualidade preditiva e compreensibilidade.
 
       - Análise:
         - Usando uma árvore de decisão com todos as feature, resultou em mesma acurácia que uma árvore apenas com feature `number-children-born` com 47,5%, sendo assim, a maior acurácia conseguida nos métodos utilizados fica em 47,5%.
+
+### Arquivo para download (orange)
+ - [contraceptive-method-choice.ows](contraceptive-method-choice.ows)
