@@ -7,19 +7,23 @@
 		<node id="3" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(466.0, 210.0)" />
 		<node id="4" name="Feature Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Feature Statistics" position="(731.0, 87.0)" />
 		<node id="5" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(768.0, 181.0)" />
-		<node id="6" name="Rank" qualified_name="Orange.widgets.data.owrank.OWRank" project_name="Orange3" version="" title="Rank" position="(697.0, 367.0)" />
+		<node id="6" name="Rank" qualified_name="Orange.widgets.data.owrank.OWRank" project_name="Orange3" version="" title="Rank" position="(695.0, 370.0)" />
 		<node id="7" name="Data Info" qualified_name="Orange.widgets.data.owdatainfo.OWDataInfo" project_name="Orange3" version="" title="Data Info" position="(712.0, 6.0)" />
 		<node id="8" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(694.0, 251.0)" />
 		<node id="9" name="Discretize" qualified_name="Orange.widgets.data.owdiscretize.OWDiscretize" project_name="Orange3" version="" title="Discretize" position="(432.0, 398.0)" />
 		<node id="10" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (1)" position="(588.0, 361.0)" />
-		<node id="11" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain (1)" position="(511.0, 490.0)" />
-		<node id="12" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Test and Score" position="(874.0, 331.0)" />
-		<node id="13" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns (1)" position="(566.0, 580.0)" />
-		<node id="14" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Group by" position="(661.0, 515.0)" />
-		<node id="15" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (2)" position="(765.0, 574.0)" />
-		<node id="16" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree" position="(783.0, 427.0)" />
+		<node id="11" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain (1)" position="(476.0, 490.0)" />
+		<node id="12" name="Test and Score" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Test and Score" position="(894.0, 356.0)" />
+		<node id="13" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns (1)" position="(589.0, 576.0)" />
+		<node id="14" name="Group by" qualified_name="Orange.widgets.data.owgroupby.OWGroupBy" project_name="Orange3" version="" title="Group by" position="(708.0, 634.0)" />
+		<node id="15" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table (2)" position="(816.0, 678.0)" />
+		<node id="16" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree" position="(767.0, 401.0)" />
 		<node id="17" name="Confusion Matrix" qualified_name="Orange.widgets.evaluate.owconfusionmatrix.OWConfusionMatrix" project_name="Orange3" version="" title="Confusion Matrix" position="(942.0, 236.0)" />
 		<node id="18" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="Tree Viewer" position="(906.0, 504.0)" />
+		<node id="19" name="CN2 Rule Induction" qualified_name="Orange.widgets.model.owrules.OWRuleLearner" project_name="Orange3" version="" title="CN2 Rule Induction" position="(785.0, 285.0)" />
+		<node id="20" name="CN2 Rule Viewer" qualified_name="Orange.widgets.visualize.owruleviewer.OWRuleViewer" project_name="Orange3" version="" title="CN2 Rule Viewer" position="(884.0, 173.0)" />
+		<node id="21" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTreeLearner" project_name="Orange3" version="" title="Tree (1)" position="(716.0, 511.0)" />
+		<node id="22" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeGraph" project_name="Orange3" version="" title="Tree Viewer (1)" position="(835.0, 586.0)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
@@ -41,6 +45,12 @@
 		<link id="16" source_node_id="16" sink_node_id="18" source_channel="Model" sink_channel="Tree" enabled="true" />
 		<link id="17" source_node_id="6" sink_node_id="16" source_channel="Reduced Data" sink_channel="Data" enabled="true" />
 		<link id="18" source_node_id="6" sink_node_id="12" source_channel="Reduced Data" sink_channel="Data" enabled="true" />
+		<link id="19" source_node_id="19" sink_node_id="12" source_channel="Learner" sink_channel="Learner" enabled="true" />
+		<link id="20" source_node_id="19" sink_node_id="20" source_channel="Model" sink_channel="Classifier" enabled="true" />
+		<link id="21" source_node_id="10" sink_node_id="19" source_channel="Selected Data" sink_channel="Data" enabled="true" />
+		<link id="22" source_node_id="10" sink_node_id="21" source_channel="Selected Data" sink_channel="Data" enabled="true" />
+		<link id="23" source_node_id="21" sink_node_id="12" source_channel="Learner" sink_channel="Learner" enabled="true" />
+		<link id="24" source_node_id="21" sink_node_id="22" source_channel="Model" sink_channel="Tree" enabled="true" />
 	</links>
 	<annotations />
 	<thumbnail />
@@ -276,7 +286,7 @@ lGFK/f///4aUaAVLAXVoOH2UKGgRSwFoyUsBdWjBfZR1YmV1Lg==
 		<properties node_id="16" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 4, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06\xf1\x00\x00\x01\x97\x00\x00\x08S\x00\x00\x02\xe7\x00\x00\x06\xf1\x00\x00\x01\x97\x00\x00\x08S\x00\x00\x02\xe7\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x06\xf1\x00\x00\x01\x97\x00\x00\x08S\x00\x00\x02\xe7', 'sufficient_majority': 95, '__version__': 1}</properties>
 		<properties node_id="17" format="pickle">gASVtQEAAAAAAAB9lCiMEmFwcGVuZF9wcmVkaWN0aW9uc5SIjBRhcHBlbmRfcHJvYmFiaWxpdGll
 c5SJjAphdXRvY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21l
-dHJ5lENCAdnQywADAAAAAANyAAAAkAAACQIAAAPKAAADcgAAAJAAAAkCAAADygAAAAAAAAAACgAA
+dHJ5lENCAdnQywADAAAAAANyAAAAawAACQIAAAPKAAADcgAAAJAAAAkCAAADygAAAAAAAAAACgAA
 AANyAAAAkAAACQIAAAPKlIwQc2VsZWN0ZWRfbGVhcm5lcpSMB2NvcHlyZWeUjA5fcmVjb25zdHJ1
 Y3RvcpSTlIwIYnVpbHRpbnOUjARsaXN0lJOUaA0ph5RSlEsAYYwRc2VsZWN0ZWRfcXVhbnRpdHmU
 SwKMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0
@@ -284,6 +294,17 @@ dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAlzZWxlY3Rpb26Uj5RoEUsBdYwH
 Y2xhc3Nlc5SMBk5vLXVzZZSMCUxvbmctdGVybZSMClNob3J0LXRlcm2Uh5R1YmF1Lg==
 </properties>
 		<properties node_id="18" format="pickle">gASVeQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFsaW5lX3dpZHRoX21ldGhvZJRL
+AowObWF4X25vZGVfd2lkdGiUSzKMDm1heF90cmVlX2RlcHRolEsAjBFyZWdyZXNzaW9uX2NvbG9y
+c5RLAIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAAAAAAAEAAAAn/AAAD8wAAAAAA
+AABAAAAJ/wAAA/MAAAAAAgAAAAoAAAAAAAAAAEAAAAn/AAAD85SMBHpvb22USwGMC19fdmVyc2lv
+bl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OUjAdDb250
+ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBJ0YXJnZXRfY2xhc3NfaW5kZXiUSwBoCUsBdYwHY2xh
+c3Nlc5SMBk5vLXVzZZSMCUxvbmctdGVybZSMClNob3J0LXRlcm2Uh5R1YmF1Lg==
+</properties>
+		<properties node_id="19" format="literal">{'auto_apply': True, 'beam_width': 5, 'checked_default_alpha': False, 'checked_parent_alpha': False, 'controlAreaVisible': True, 'covering_algorithm': 0, 'default_alpha': 1.0, 'evaluation_measure': 0, 'gamma': 0.7, 'learner_name': 'CN2 rule inducer', 'max_rule_length': 5, 'min_covered_examples': 1, 'parent_alpha': 1.0, 'rule_ordering': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04K\x00\x00\x00\xd6\x00\x00\x05\xa1\x00\x00\x02\xc3\x00\x00\x04K\x00\x00\x00\xfb\x00\x00\x05\xa1\x00\x00\x02\xc3\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x04K\x00\x00\x00\xfb\x00\x00\x05\xa1\x00\x00\x02\xc3', '__version__': 1}</properties>
+		<properties node_id="20" format="literal">{'compact_view': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xde\x00\x00\x01\x00\x00\x00\x07\x8a\x00\x00\x02\xe7\x00\x00\x02\xde\x00\x00\x01%\x00\x00\x07\x8a\x00\x00\x02\xe7\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x02\xde\x00\x00\x01%\x00\x00\x07\x8a\x00\x00\x02\xe7', '__version__': 1}</properties>
+		<properties node_id="21" format="literal">{'auto_apply': True, 'binary_trees': True, 'controlAreaVisible': True, 'learner_name': '', 'limit_depth': True, 'limit_majority': True, 'limit_min_internal': True, 'limit_min_leaf': True, 'max_depth': 100, 'min_internal': 4, 'min_leaf': 2, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06\xf1\x00\x00\x01r\x00\x00\x08S\x00\x00\x02\xe7\x00\x00\x06\xf1\x00\x00\x01\x97\x00\x00\x08S\x00\x00\x02\xe7\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x06\xf1\x00\x00\x01\x97\x00\x00\x08S\x00\x00\x02\xe7', 'sufficient_majority': 95, '__version__': 1}</properties>
+		<properties node_id="22" format="pickle">gASVeQEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBFsaW5lX3dpZHRoX21ldGhvZJRL
 AowObWF4X25vZGVfd2lkdGiUSzKMDm1heF90cmVlX2RlcHRolEsAjBFyZWdyZXNzaW9uX2NvbG9y
 c5RLAIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAAAAAAAAAAAEAAAAn/AAAD8wAAAAAA
 AABAAAAJ/wAAA/MAAAAAAgAAAAoAAAAAAAAAAEAAAAn/AAAD85SMBHpvb22USwGMC19fdmVyc2lv

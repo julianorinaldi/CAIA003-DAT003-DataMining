@@ -78,6 +78,24 @@
 
     e. Utilize o CN2 para gerar regras de classificação que sejam compreensíveis e interessantes (mas, não óbvias). Com base nestas regras, contextualize e esclareça o perfil (sócio-econômico e cultural) das usuárias de métodos contraceptivos short_term e principalmente long_term na Indonésia.
 
+      - Análise:
+        - `short_term` aparenta ser usado para mulheres com com edução mais básica
+
+        ![Imagem](https://i.imgur.com/D7pMZVm.png)
+
+        - `long_term` aparenta ser usado para mulheres com com edução mais completa
+        
+        ![Imagem](https://i.imgur.com/w7KcbBA.png)
+
     f. Compare a qualidade preditiva dos três métodos (ZeroRule, OneRule e CN2).
 
+      - Análise:
+        - ZeroRule: 22,60%
+        - OneRule: 47,5%
+        - CN2: 47,5%
+      - OneRule e CN2 tiverem mesmo resultados.
+
     g. Gere uma árvore de decisão com uma profundidade que permita a sua compreensão. Compare o resultado aqui obtido com as regras de classificação anteriormente obtidas e discuta os pontos positivos e negativos das duas abordagens (árvores X regras) em termos de qualidade preditiva e compreensibilidade.
+
+      - Análise:
+        - Usando uma árvore de decisão com todos as feature, resultou em mesma acurácia que uma árvore apenas com feature `number-children-born` com 47,5%, sendo assim, a maior acurácia conseguida nos métodos utilizados fica em 47,5%.
