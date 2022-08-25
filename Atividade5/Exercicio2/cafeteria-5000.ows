@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(150, 150)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWDataTable" project_name="Orange3" version="" title="Data Table" position="(379.0, 97.0)" />
+		<node id="2" name="Frequent Itemsets" qualified_name="orangecontrib.associate.widgets.owitemsets.OWItemsets" project_name="Orange3-Associate" version="" title="Frequent Itemsets" position="(562.0, 213.0)" />
+		<node id="3" name="Association Rules" qualified_name="orangecontrib.associate.widgets.owassociate.OWAssociate" project_name="Orange3-Associate" version="" title="Association Rules" position="(830.0, 210.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Matching Data" sink_channel="Data" enabled="true" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/julianorinaldi/source/learning/MESTRADO/CAIA003-DAT003-DataMining/Atividade5/Exercicio2/Dataset/cafeteria-5000.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 51, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/julianorinaldi/source/learning/MESTRADO/CAIA003-DAT003-DataMining/Atividade5/Exercicio2/Dataset', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04Y\x00\x00\x01\x1b\x00\x00\x05\x92\x00\x00\x02~\x00\x00\x04Y\x00\x00\x01@\x00\x00\x05\x92\x00\x00\x02~\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x04Y\x00\x00\x01@\x00\x00\x05\x92\x00\x00\x02~', '__version__': 3}</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'dist_color_RGB': (220, 220, 220, 255), 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xfd\x00\x00\x01r\x00\x00\x05P\x00\x00\x02\xb6\x00\x00\x02\xfd\x00\x00\x01\x97\x00\x00\x05P\x00\x00\x02\xb6\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x02\xfd\x00\x00\x01\x97\x00\x00\x05P\x00\x00\x02\xb6', 'select_rows': True, 'selected_cols': [], 'selected_rows': [], 'show_attribute_labels': True, 'show_distributions': False, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'autoFind': False, 'autoSend': False, 'controlAreaVisible': True, 'filterKeywords': '', 'filterMaxItems': 10000, 'filterMinItems': 1, 'filterSearch': True, 'maxItemsets': 100000, 'minSupport': 0.1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x97\x00\x00\x01|\x00\x00\x08\r\x00\x00\x03\x94\x00\x00\x04\x97\x00\x00\x01\xa1\x00\x00\x08\r\x00\x00\x03\x94\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x04\x97\x00\x00\x01\xa1\x00\x00\x08\r\x00\x00\x03\x94', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'autoFind': False, 'autoSend': True, 'classify': False, 'controlAreaVisible': True, 'filterAntecedentMax': 100, 'filterAntecedentMin': 1, 'filterConsequentMax': 100, 'filterConsequentMin': 1, 'filterKeywordsAntecedent': '', 'filterKeywordsConsequent': '', 'filterSearch': True, 'maxRules': 20000, 'minConfidence': 70, 'minSupport': 0.1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x99\x00\x00\x017\x00\x00\x07\xc1\x00\x00\x03O\x00\x00\x04\x99\x00\x00\x01\\\x00\x00\x07\xc1\x00\x00\x03O\x00\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\x04\x99\x00\x00\x01\\\x00\x00\x07\xc1\x00\x00\x03O', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
